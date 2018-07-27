@@ -1,0 +1,8 @@
+./dudes/{id}
+|===
+|Parameter|Description
+
+|`+id+`
+|Identifier of the dude to be obtained.
+
+|===

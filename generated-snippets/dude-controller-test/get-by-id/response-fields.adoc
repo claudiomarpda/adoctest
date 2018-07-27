@@ -1,0 +1,12 @@
+|===
+|Path|Type|Description
+
+|`+id+`
+|`+Number+`
+|This is Dude's id
+
+|`+name+`
+|`+String+`
+|This is Dude's name
+
+|===
