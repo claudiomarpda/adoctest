@@ -14,16 +14,16 @@ Collection of CRUD API endpoints used to manipulate persons registered in the ap
 Obtains a specific person registered in the application by its unique identifier.
 
 ==== Sample Request
-include::{snippets}/dude-controller-test/get-by-id/http-request.adoc[]
+include::{snippets}/generated-snippets/dude-controller-test/get-by-id/http-request.adoc[]
 
 ==== Path Parameters
-include::/dude-controller-test/get-by-id/path-parameters.adoc[]
+include::/generated-snippets/dude-controller-test/get-by-id/path-parameters.adoc[]
 
 ==== Sample Response
-/dude-controller-test/get-by-id/http-response.adoc[]
+/generated-snippets/dude-controller-test/get-by-id/http-response.adoc[]
 
 ==== Sample Response Fields
-include::dude-controller-test/get-by-id/response-fields.adoc[]
+include::generated-snippets/dude-controller-test/get-by-id/response-fields.adoc[]
 
 ==== CURL sample
 include::{snippets}/dude-controller-test/get-by-id/curl-request.adoc[]
