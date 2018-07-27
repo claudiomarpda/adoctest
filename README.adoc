@@ -7,7 +7,7 @@ mz <my@email.com>
 == Introduction
 This is an example of Spring REST Docs generated documentation.
 
-== Persons API
+== Sample API
 Collection of CRUD API endpoints used to manipulate persons registered in the application.
 
 === Get Person By Id
@@ -16,22 +16,41 @@ Obtains a specific person registered in the application by its unique identifier
 ==== Sample Request
 include::{snippets}/generated-snippets/dude-controller-test/get-by-id/http-request.adoc[]
 
+[source,http,options="nowrap"]
+----
+GET /dudes/1 HTTP/1.1
+Accept: application/json
+Host: localhost:8080
+
+----
+
+
 ==== Path Parameters
 include::/generated-snippets/dude-controller-test/get-by-id/path-parameters.adoc[]
+
+./dudes/{id}
+|===
+|Parameter|Description
+
+|`+id+`
+|Identifier of the dude to be obtained.
+
+|===
 
 ==== Sample Response
 /generated-snippets/dude-controller-test/get-by-id/http-response.adoc[]
 
-==== Sample Response Fields
-include::generated-snippets/dude-controller-test/get-by-id/response-fields.adoc[]
+[source,http,options="nowrap"]
+----
+HTTP/1.1 200 OK
+Content-Type: application/json;charset=UTF-8
+Content-Length: 35
 
-==== CURL sample
-include::{snippets}/dude-controller-test/get-by-id/curl-request.adoc[]
+{
+  "id" : 1,
+  "name" : "Duuude"
+}
+----
 
 
-=== Operation test
-operation::{snippets}/dude-controller-test/get-by-id[snippets='http-request, http-response, response-fields']
 
-==== Links
-
-include::{snippets}/index-example/links.adoc[]
