@@ -1,5 +1,5 @@
 = Sample API Documentation
-mz <my@email.com>
+mz <mz@email.com>
 1.0.0, 27/7/2018
 :toc: left
 :sectnums:
@@ -8,13 +8,12 @@ mz <my@email.com>
 This is an example of Spring REST Docs generated documentation.
 
 == Sample API
-Collection of CRUD API endpoints used to manipulate persons registered in the application.
+Collection of CRUD API endpoints used to manipulate dudes registered in the application.
 
-=== Get Person By Id
-Obtains a specific person registered in the application by its unique identifier.
+=== Get Sample By Id
+Obtains a specific dude registered in the application by its unique identifier.
 
 ==== Sample Request
-include::{snippets}/generated-snippets/dude-controller-test/get-by-id/http-request.adoc[]
 
 [source,http,options="nowrap"]
 ----
@@ -24,9 +23,7 @@ Host: localhost:8080
 
 ----
 
-
 ==== Path Parameters
-include::/generated-snippets/dude-controller-test/get-by-id/path-parameters.adoc[]
 
 ./dudes/{id}
 |===
@@ -38,7 +35,6 @@ include::/generated-snippets/dude-controller-test/get-by-id/path-parameters.adoc
 |===
 
 ==== Sample Response
-/generated-snippets/dude-controller-test/get-by-id/http-response.adoc[]
 
 [source,http,options="nowrap"]
 ----
